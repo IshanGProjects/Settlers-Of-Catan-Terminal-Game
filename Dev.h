@@ -1,15 +1,14 @@
-//CSCI 1300 Fall 2021
-//Author: Jaskarn Kahlon. Ishan Gohil
-//Recitation 200 - Pragna
-//Project 3 - Dev card header file
+// CSCI 1300 Fall 2021
+// Author: Jaskarn Kahlon. Ishan Gohil
+// Recitation 200 - Pragna
+// Project 3 - Dev card header file
 
 /*
 sets the amount of devcards
 randomizes the value of the devcard
 */
 
-
-#ifndef DEV_H //Preprocessor directive
+#ifndef DEV_H // Preprocessor directive
 #define DEV_H
 
 #include <iostream>
@@ -19,31 +18,29 @@ using namespace std;
 
 class Dev
 {
-
+    // Test comment
 public:
-    //default constructor 
-    Dev();  
+    // default constructor
+    Dev();
     void devReset();
 
-    
     // //parameterized constructor
     // Dev(int numDevCards1, int numDevCards2, int outcomes[], int size);
 
-    //getters
+    // getters
     int getNumDevCards1();
     int getNumDevCards2();
     int getNumSoldiersP1();
     int getNumSoldiersP2();
     int getOutcomes();
 
-    //setters
+    // setters
     void setNumDevCards1(int numDevCards);
     void setNumDevCards2(int numDevCards);
     void setNumSoldiersP1(int);
     void setNumSoldiersP2(int);
 
-
-    private:
+private:
     int numDevCards1;
     int numDevCards2;
     static const int size = 5;
